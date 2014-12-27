@@ -80,7 +80,7 @@ Rails.application.configure do
   # email enabled in production
   config.action_mailer.default_url_options = { :host => Rails.application.secrets.domain_name }
   config.action_mailer.delivery_methods = :smtp
-  config.action_mailer.performs_deliveries = true
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
